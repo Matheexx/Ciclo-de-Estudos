@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ciclo de Estudos - Crie o seu ciclo de estudos personalisado</title>
+</head>
+<body>
+    <div style="text-align: center; margin: 5px;">
+        <h1>Créditos:</h1>
+        <br>
+        <p>Créditos reservados à Andrew Logan, da qual utilizei o método na construção do gerador de ciclos, o mesmo que compartilhou o método no seu canal, Matemática em evidência.</p>
+    </div>
+    <div id="machine">
+        <div>
+            <h2>Gerador do Ciclo</h2>
+        </div>
+        <div id="form">
+            <div id="div-contents_and_difficult">
+                <div id="div-contents_and_difficult_form">
+                    <div id="div-inputs-contents_and_difficult">
+                        <div style="display: flex; flex-direction: column; gap:1px;">
+                            <label for="input_content">Matéria/conteúdo</label>
+                            <input type="text" name="input_content" id="input_content" class="input_text">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <div style="display: flex; flex-direction: column; gap: 3px;">
+                                <label for="input_difficult">Dificuldade nesta matéria/conteúdo (de 1 a 5)</label>
+                                <input type="number" name="input_difficult" id="input_difficult" class="input_text">
+                            </div>
+                            <small style="background-color: #1b1b1b; padding: 5px; border-radius: 5px;"><p>Métrica da dificuldade: <br/> <span class="diff_1">1 = Sou ótimo</span> | <span class="diff_2">2 = Sou bom</span> | <span class="diff_3">3 = Sou razoável</span> | <span class="diff_4">4 = Sou ruim</span> | <span class="diff_5">5 = Sou péssimo</span></p></small>
+                        </div>
+                    </div>
+                    <div id="content_btns">
+                        <input type="button" value="Adicionar matéria à lista" onclick="add()" class="input_btn">
+                        <input type="button" value="Limpar lista" onclick="clearList()" class="input_btn">
+                    </div>
+                </div>
+                <div>
+                    <p>Lista das matérias/conteúdos:</p>
+                    <select name="list_contents" id="list_contents" size="7" style="width: 100%; background-color: #1b1b1b;">
+                    
+                    </select>
+                </div>
+            </div>
+            <div id="div-hours_per_day">
+                <label for="input_hours_per_day">Quantidade de horas a serem estudadas diariamente:</label> <input type="number" name="input_hours_per_day" id="input_hours_per_day" class="input_text">
+            </div>
+            <input type="button" value="Mostrar resultado" onclick="end()" class="input_btn" style="width: 70%; margin: auto; height: 30px;">
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

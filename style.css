@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: normal 12pt sans-serif;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+#machine {
+    background-color: #181818;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.363);
+
+    width: 472px;
+
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 35px;
+}
+
+#div-contents_and_difficult {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+#div-contents_and_difficult_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+#div-inputs-contents_and_difficult {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+#input_hours_per_day, #input_difficult {
+    width: 5em;
+}
+
+#input_content {
+    width: 15em;
+}
+
+label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.input_text {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.4px solid white;
+    color: white;
+}
+
+#content_btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.input_btn {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.input_btn:hover {
+    background-color: rgb(207, 207, 207);
+    transition: 0.2s;
+}
+
+small {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.diff_1 {
+    color: rgb(0, 60, 255);
+}
+
+.diff_2 {
+    color: rgb(2, 211, 2);
+}
+
+.diff_3 {
+    color: yellow;
+}
+
+.diff_4 {
+    color: rgb(255, 136, 0);
+}
+
+.diff_5 {
+    color: red;
+}
